@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    text-decoration: none;
+}
+
+#btn1, #btn2
+{
+    width: 120px;
+    height: 50px;
+}
+#btn1
+{
+    border-radius: 20px 0 0 20px;
+}
+#btn2
+{
+    border-radius: 0 20px 20px 0;
+} 
+#btn1:hover, #btn2:hover
+{
+    background-color: #e0e0e0;
+}
+#btn1:active, #btn2:active
+{
+    background-color: #c9c9c9;
+}
+#para1
+{   
+    width: 300px;
+    background-color: yellow;
+
+    /* background-color: rgba(255,255,0,0.2); */
+    /* 배경색만 반투명, 내용은 적용 X */
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* opacity: 0;  */
+    /* 완전 투명, 안보임 */
+
+    /* opacity: 0.2; */
+    /* 반투명, 글씨도 통째로 반투명 됨*/
+
+    opacity: 1;
+
+    transition: all 0.4s;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(30deg);
+    
+    /* 내용물도 커지고, 중앙점을 기준으로 커짐. */
+    
+    /* translate()는 자기 자신을 기준으로 함 */
+}
+#para1:hover
+{
+    background-color: red;
+    /* width: 200px; */
+    transform: translate(-50%,-50%) scale(2);
+}
+
+/* 미디어 쿼리는 css의 가장 하단에 위치해야함
+미디어 쿼리 아래에 다른 룰이 있어서는 안된다.
+max-width 사용하는 경우 미디어 쿼리는 내림차순(값이 큰거부터 시작) 이어야 한다. */
+/* 미디어 쿼리는 상황에 따라 바뀌게 하기 위해 사용 */
+
+/* @media all and (max-width: 800px)
+{
+    #para1
+    {
+        background-color: aqua;        
+    }
+}
+@media all and (max-width: 600px)
+{
+    #para1
+    {
+        background-color: green;        
+    }
+} */
+
+.cen
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+#forum a
+{
+    display: block;
+    width: 25%;
+    height: 200px;
+    float: left;
+    background-color: #06c;
+    color: white;
+    border-right: 1px solid rgba(255,255,255,0.5); 
+    padding: 1.5em 1em;
+    transition: all 0.4s;
+}
+#forum
+{
+    /* overflow: auto; */
+    height: 200px;
+    margin-top: 50px;
+}
+#forum a:last-of-type
+{
+    border-right: none;
+}
+#forum a:hover
+{
+    transform: scale(1.2);
+    background-color: black;
+}
+
+/* tablet pc css */
+@media all and (max-width: 1024px)
+{
+    #forum a
+    {
+        width: 50%;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+    #forum 
+    {
+        height: 400px;
+    }
+}
+
+/* mobile css */
+@media all and (max-width: 720px)
+{
+    #forum a
+    {
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        float: none;
+    }
+    #forum
+    {
+        height: 800px;
+    }
+}

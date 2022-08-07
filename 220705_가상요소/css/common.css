@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#apple::after
+{
+    content: "ㅋㅋㅋㅋ";
+    color: red;
+}
+#apple::before
+{
+    content: "ㅎㅎㅎㅎ";
+    color: blueviolet;
+}
+#gj
+{
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    border-collapse: collapse;
+}
+#gj th
+{
+    background-color: #e0e0e0;
+}
+#gj td,
+#gj th
+{
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    padding: 5px 8px; 
+    /* 상하 / 좌우 */
+}
+#gj td:first-child,
+#gj th:first-child
+{
+    border-left: none;
+}
+#gj tr:last-child td,
+#gj tr:last-child th
+{
+    border-bottom: none;
+}
+.price
+{
+    text-align: right;
+}
+.price::after
+{
+    content: "\\";
+}
+#dish
+{
+    list-style: none;
+}
+#dish li
+{
+    width: 20%;
+    height: 100px;
+    float: left;
+    border: 3px solid red;
+}
+#dish li a
+{
+    width: 100%;
+    height: 100px;
+    display: block;
+    padding-top: 35px;
+    text-align: center;
+    position: relative;
+}
+#dish li a::after
+{
+    content: "주문하기";
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 100px;
+    display: none;
+}
+#dish li a:hover::after
+{
+    display: block;
+}

@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-collapse: collapse;
+}
+
+#box1
+{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    /* z-index: -1; */
+}
+#box0
+{
+    width: 600px;
+    height: 400px;
+    background-color: yellow;
+    margin-left: 100px;
+    margin-top: 50px;
+    position: absolute;
+    /* 마진으로 움직이면 다른 요소들까지 
+    밀고다니므로 글이 밀림 */
+
+    /* 보통 앱솔루트를 잡아주기 위해
+    부모에게 릴레이티브를 줌 */
+
+}
+#box2, #box3, #box4
+{
+    width: 150px;
+    height: 80px;
+    position: absolute;
+}
+#box2
+{
+    background-color: pink;
+    z-index: 100;
+}
+#box3
+{
+    background-color: blue;
+    z-index: 200;
+}
+#box4
+{
+    background-color: green;
+}
+#box5
+{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 300px;
+    top: 200px;
+}
+#box6
+{
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    position: fixed;
+    right: 0;
+}
+#box7
+{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    /* left: 50%;
+    margin-left: -150px; */
+
+    /* left: calc(50% - 150px); */
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* 앱솔루트 가운데로 보낼 때 쓰는 것 */
+    /* 별 100개 */
+}
+#box8
+{
+    /* width: 100%;
+    height: 100%;
+    position: fixed; */
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+
+    /* 화면전체를 가리는 박스 만드는 법 */
+
+    background-color: rgba(0,0,255,0.5);
+}
+#box9
+{
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    position: relative;
+}
+#box10
+{
+    width: 200px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#box11
+{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+#box11 img
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#pan
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    padding-top: 90px;
+    display: none;
+}
+#box11:hover #pan
+{
+    display: block;
+}

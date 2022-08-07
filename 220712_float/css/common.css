@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.box
+{
+    width: 200px;
+    height: 100px;
+    border: 5px solid red;
+    /* float: left; */
+}
+#parent
+{
+    height: 100px;
+}
+#first
+{
+    float: left;
+}
+#second
+{
+    float: left;
+}
+#third
+{
+    border-color: blue;
+}
+#fourth
+{
+    background-color: yellowgreen;
+    width: 50%;
+    float: left;
+}
+#fifth
+{
+    background-color: pink;
+    width: 50%;
+    float: left;
+}
+#seventh
+{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+}
+#parent2
+{
+    overflow: auto;
+}
+#parent3
+{
+    overflow: auto;    
+}
+.element
+{
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+}
+#victim
+{
+    /* clear: both; */
+    width: 500px;
+    height: 400px;
+    background-color: orange;
+}
+#gnb
+{
+    overflow: auto;
+    float: right;
+}
+#gnb a
+{
+    width: 150px;
+    height: 40px;
+    background-color: #06c;
+    color: white;
+    display: block;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+}
+#gnb a:hover
+{
+    background-color: #59f;
+}
+nav
+{
+    overflow: auto;
+}
+#lnb
+{
+    overflow: auto;
+
+    width: 600px;
+    margin: auto;
+
+    /* 비율 달라지면 안됨 */
+
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+
+     /* > 글씨 위에 뜸 */
+}
+.main
+{
+    width: 120px;
+    height: 50px;
+    background-color: #f0f0f0;
+    float: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}
+#imgbox
+{
+    width: 500px;
+    height: 200px;
+    background-image: url(../images/picture1.jpg);
+
+    /* 가로나 세로 길이 중 하나만 선언 */
+
+    /* background-size: contain; */
+    background-size: cover;
+
+
+    background-repeat: no-repeat;
+    /* background-color: aquamarine; */
+
+    background-position: center;
+
+}
+ul
+{
+    margin-left: 30px;
+    list-style: decimal;
+
+    /* 거의 안씀, 리스트 스타일 none만 거의 씀 */
+}
+.cen
+{
+    background-color: red;
+
+    /* width: 100%; */
+
+    max-width: 1200px;
+    margin: auto;
+
+    /* 반응형 웹의 중앙정렬, 매우중요 */
+
+    min-width: 500px;
+    height: 200px;
+}

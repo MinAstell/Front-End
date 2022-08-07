@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="백경민"/>
+    <meta name="keywards" content="아코디언 메뉴바, 메뉴바, 내비게이션 바, nav"/>
+    <meta name="description" content="메인메뉴를 눌렀을 때 해당하는 서브메뉴가 하단에서 늘어나면서 나타나는 아코디언 메뉴바"/>
+    <title>Accordian menubar</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/152633f647.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Logo</h1>
+        <button type="button" id="ham">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <div id="backdrop"></div>
+
+    <nav id="menu">
+        <button type="button" id="close">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <ul>
+            <li class="main">
+                <a href="#">회사소개<i class="fas fa-caret-down"></i></a>
+                <ul class="sub">
+                    <li><a href="#">CEO 인사말</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">회사연혁</a></li>
+                    <li><a href="#">시공실적</a></li>
+                </ul>
+            </li>
+            <li class="main">
+                <a href="#">브랜드 소개<i class="fas fa-caret-down"></i></a>
+                <ul class="sub">
+                    <li><a href="#">푸르경민</a></li>
+                    <li><a href="#">경민시티</a></li>
+                </ul>
+            </li>
+            <li class="main">
+                <a href="#">기술력<i class="fas fa-caret-down"></i></a>
+                <ul class="sub">
+                    <li><a href="#">강화 콘크리트</a></li>
+                    <li><a href="#">내진설계</a></li>
+                    <li><a href="#">거주자 친화적 설계</a></li>
+                </ul>
+            </li>
+            <li class="main">
+                <a href="#">분양신청<i class="fas fa-caret-down"></i></a>
+                <ul class="sub">
+                    <li><a href="#">신청하기</a></li>
+                    <li><a href="#">확인하기</a></li>
+                    <li><a href="#">제출서류안내</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        백경민
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+        qwd q wdq wdq dqwd qwd wd qwdqw qwd qwd qwd qwd qwdqw dw dqwd qwd qwd qwd qwd qwd qwd qwqd qwd qwd qwd qwd qwd qwdq w qwd qwdqw dqw qwd qwdqw qd qwd qw dqwd qwd qwd qwd qwd qwd qwd qd qwd qdqw dq wd 
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
